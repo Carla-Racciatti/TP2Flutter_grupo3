@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 class DrawerMenu extends StatelessWidget {
   final List<Map<String, String>> _menuItems = <Map<String, String>>[
-    {'route': 'home', 'title': 'Home', 'subtitle': 'Home + counter app'},
-    {'route': 'custom_list', 'title': 'Custom list', 'subtitle': ''},
-    {'route': 'profile', 'title': 'Perfil usuario', 'subtitle': ''},
+    {'route': 'home', 'title': 'Home', 'subtitle': 'Home page'},
+    {'route': 'actors', 'title': 'Actors', 'subtitle': 'Carla Racciatti'},
+    {'route': 'series', 'title': 'Series', 'subtitle': 'Stefano Mattei'},
+    {'route': 'movies', 'title': 'Movies', 'subtitle': 'Nicolás Clemente S.'},
+    {'route': 'profile', 'title': 'User profile', 'subtitle': 'Perfil de usuario-Cambio de tema light/dark '},
   ];
 
   DrawerMenu({super.key});
@@ -97,7 +99,7 @@ class _DrawerHeaderAlternative extends StatelessWidget {
             width: 30,
             height: 30,
             decoration: BoxDecoration(
-                color: Colors.green.withOpacity(0.4),
+                color: const Color.fromARGB(255, 131, 68, 150).withOpacity(0.4),
                 borderRadius: BorderRadius.circular(5)),
             transform: Matrix4.rotationZ(0.9),
           ),
