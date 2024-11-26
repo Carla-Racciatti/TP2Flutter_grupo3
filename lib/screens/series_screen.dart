@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/featured_series_image.dart';
 import '../widgets/recommended_series_swiper.dart';
-import '../widgets/custom_drawer.dart';
 import '../widgets/series_app_bar.dart';
 import '../widgets/series_search_delegate.dart';
 import 'package:flutter_app/screens/series_detail_screen.dart'; // Asegúrate de importar el detalle de la serie
