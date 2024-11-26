@@ -30,8 +30,8 @@ class MyApp extends StatelessWidget {
             routes: {
               'home': (context) => const HomeScreen(),
               'profile': (context) => const ProfileScreen(),
+              'series': (context) =>  SeriesScreen(),
               //'actors': (context) => const ...(),
-              //'series': (context) => const ...(),
               //'movies': (context) => const ...(),
             },
           );
