@@ -1,4 +1,3 @@
-import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/widgets/drawer_menu.dart';
 import 'package:flutter_app/widgets/custom_app_bar.dart';
