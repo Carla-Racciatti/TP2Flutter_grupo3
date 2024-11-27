@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
-import '../widgets/featured_series_image.dart';
-import '../widgets/recommended_series_swiper.dart';
-import '../widgets/series_app_bar.dart';
-import '../widgets/series_search_delegate.dart';
-import 'package:flutter_app/screens/series_detail_screen.dart'; // Asegúrate de importar el detalle de la serie
+import '../../widgets/series/featured_series_image.dart';
+import '../../widgets/series/recommended_series_swiper.dart';
+import '../../widgets/series/series_app_bar.dart';
+import '../../widgets/series/series_search_delegate.dart';
+import 'package:flutter_app/screens/series/series_detail_screen.dart';
 
 class SeriesScreen extends StatelessWidget {
+  final String featuredImagePath = 'assets/images/series/series5.jpg';
+  final String featuredTitle = 'One Piece';
+  final String featuredDescription = 'Luffy, un joven con poderes de goma, lidera a su tripulación en una épica aventura para encontrar el legendario tesoro "One Piece" y convertirse en el Rey de los Piratas, enfrentándose a enemigos poderosos y desafiando el orden mundial.';
+
   void _onSearchTap(BuildContext context) {
     showSearch(
       context: context,
@@ -28,7 +32,11 @@ class SeriesScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => SeriesDetailScreen(seriesIndex: 0), // Pasas el índice de la serie
+                  builder: (context) => SeriesDetailScreen(
+                    imagePath: featuredImagePath,
+                    title: featuredTitle,
+                    description: featuredDescription,
+                  ),
                 ),
               );
             },

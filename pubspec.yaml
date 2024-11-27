@@ -65,11 +65,11 @@ flutter:
     - assets/images/fondo_cine.jpg
     - assets/images/avatar.png
     - assets/images/movies/ 
-    - assets/images/series1.jpg
-    - assets/images/series2.jpg
-    - assets/images/series3.jpg
-    - assets/images/series4.jpg
-    - assets/images/series5.jpg
+    - assets/images/series/series1.jpg
+    - assets/images/series/series2.jpg
+    - assets/images/series/series3.jpg
+    - assets/images/series/series4.jpg
+    - assets/images/series/series5.jpg
   
   
 
