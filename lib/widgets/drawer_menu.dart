@@ -47,6 +47,45 @@ class DrawerMenu extends StatelessWidget {
   }
 }
 
+
+class _DrawerHeaderAlternative extends StatelessWidget {
+  const _DrawerHeaderAlternative();
+
+  @override
+  Widget build(BuildContext context) {
+    return DrawerHeader(
+      padding: EdgeInsets.zero,
+      child: Stack(
+        children: [
+          // Imagen de fondo
+          Positioned.fill(
+            child: Image.asset(
+              'assets/images/menu.jpg', 
+              fit: BoxFit.cover, 
+            ),
+          ),
+          Container(
+            alignment: Alignment.bottomRight,
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: const Text(
+              '  Menu  ',
+              style: TextStyle(
+                fontSize: 13,
+                color: Colors.white,  
+                fontFamily: 'RobotoMono',
+                fontWeight: FontWeight.bold
+              ),
+              textAlign: TextAlign.right,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+
+/*
 class _DrawerHeaderAlternative extends StatelessWidget {
   const _DrawerHeaderAlternative();
 
@@ -115,4 +154,4 @@ class _DrawerHeaderAlternative extends StatelessWidget {
       ]),
     );
   }
-}
+}*/

@@ -96,7 +96,7 @@ class _ActorsListScreenState extends State<ActorsListScreen> {
                   if (!hasMoreActors && index == actors.length) {
                     return Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Center(child: Text(' - Fin de la lista - ')),
+                      child: Center(child: Text(' - Fin de la lista -')),
                     );
                   }
 
