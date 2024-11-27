@@ -36,7 +36,7 @@ class BodyProfile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ThemeSwitchWidget(); 
+    return const ThemeSwitchWidget(); 
   }
 }
 

@@ -6,7 +6,7 @@ import 'package:flutter_app/providers/theme_provider.dart';
 import 'package:flutter_app/helpers/preferences.dart';
 
 class ThemeSwitchWidget extends StatelessWidget {
-  const ThemeSwitchWidget({Key? key}) : super(key: key);
+  const ThemeSwitchWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

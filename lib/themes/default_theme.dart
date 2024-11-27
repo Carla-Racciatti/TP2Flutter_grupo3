@@ -31,22 +31,22 @@ class DefaultTheme {
         foregroundColor: Colors.white,
       ),
     ),
-    floatingActionButtonTheme: FloatingActionButtonThemeData(
+    floatingActionButtonTheme: const FloatingActionButtonThemeData(
       backgroundColor: primaryLight,
       foregroundColor: Colors.white,
     ),
-    listTileTheme: ListTileThemeData(
+    listTileTheme: const ListTileThemeData(
       iconColor: primaryLight,
     ),
     inputDecorationTheme: InputDecorationTheme(
-      floatingLabelStyle: TextStyle(color: formElementsColorLight),
+      floatingLabelStyle: const TextStyle(color: formElementsColorLight),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(10),
-        borderSide: BorderSide(color: formElementsColorLight),
+        borderSide: const BorderSide(color: formElementsColorLight),
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(10),
-        borderSide: BorderSide(color: formElementsColorLight),
+        borderSide: const BorderSide(color: formElementsColorLight),
       ),
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(10),
