@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/widgets/custom_app_bar.dart';
-import 'package:flutter_app/widgets/theme_switch_widget.dart';  // Asegúrate de tener el switch en el archivo adecuado
+import 'package:flutter_app/widgets/theme_switch_widget.dart'; 
 import 'package:flutter_app/widgets/form_profile.dart'; 
 
 class ProfileScreen extends StatelessWidget {
@@ -17,10 +17,10 @@ class ProfileScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            // Agrega el Switch aquí si lo necesitas
+            
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 15),
-              child: ThemeSwitchWidget(),  // Asegúrate de tener este widget correctamente implementado
+              child: ThemeSwitchWidget(),  
             ),
             
             HeaderProfile(size: size),
@@ -41,7 +41,7 @@ class BodyProfile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FormProfile();  // Aquí sigue mostrando el formulario
+    return FormProfile();  
   }
 }
 
